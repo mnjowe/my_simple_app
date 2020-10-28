@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res_auto"
+    xmlns:card_view2="http://schemas.android.com/apk/re_auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".startActivity"
+    tools:showIn="@layout/activity_start">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/our_services"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:text="@string/services"
+           android:layout_marginTop="20dp"
+           android:textSize="30dp"
+           android:textColor="#CC8010"
+           android:fontFamily="@font/montserrat_semibold">
+       </TextView>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="350dp"
+           android:id="@+id/card1"
+           android:layout_margin="5dp"
+           card_view:cardCornerRadius="4dp"
+           android:layout_below="@id/our_services">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1.0"
+                   android:scaleType="centerCrop"
+                   android:contentDescription="@string/content_des1"
+                   android:background="@drawable/container_shipping"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginBottom="10dp"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:text="@string/fsh_text" />
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/details"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:paddingTop="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:onClick="detailsPage"
+                   android:textColor="#CC8010"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:text="D E T A I L S" />
+               <Button
+                       android:id="@+id/book_button1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="8dp"
+                       android:layout_marginEnd="10dp"
+                       android:background="#CC8010"
+                       android:layout_alignEnd="@+id/details"
+                       android:textColor="#fff"
+                       android:onClick="bookService"
+                       android:text="@string/details_but"
+                       android:fontFamily="@font/montserrat_semibold"
+                       android:layout_marginStart="5dp"
+                       android:layout_marginBottom="5dp"/>
+           </RelativeLayout>
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="350dp"
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/re_auto"
+           android:id="@+id/card2"
+           android:layout_margin="5dp"
+           card_view:cardCornerRadius="4dp"
+           android:layout_below="@id/card1">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1.0"
+                   android:scaleType="centerCrop"
+                   android:contentDescription="@string/content_des2"
+                   android:background="@drawable/air_travel"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/fsh_text2"
+                   android:layout_marginBottom="10dp"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:layout_marginStart="5dp"/>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:id="@+id/details2"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="5dp"
+                       android:paddingTop="20dp"
+                       android:layout_marginBottom="10dp"
+                       android:textColor="#CC8010"
+                       android:onClick="detailsPage"
+                       android:fontFamily="@font/montserrat_semibold"
+                       android:text="D E T A I L S" />
+                   <Button
+                       android:id="@+id/book_button2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="8dp"
+                       android:layout_marginEnd="10dp"
+                       android:background="#CC8010"
+                       android:onClick="bookService"
+                       android:layout_alignEnd="@+id/details2"
+                       android:textColor="#fff"
+                       android:text="@string/details_but"
+                       android:fontFamily="@font/montserrat_semibold"
+                       android:layout_marginStart="5dp"
+                       android:layout_marginBottom="5dp"/>
+               </RelativeLayout>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="350dp"
+           android:id="@+id/card3"
+       android:layout_margin="5dp"
+       card_view2:cardCornerRadius="4dp"
+       android:layout_below="@id/card2">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.0"
+               android:scaleType="centerCrop"
+               android:contentDescription="@string/content_des3"
+               android:background="@drawable/shipping"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/fsh_text3"
+               android:layout_marginBottom="10dp"
+               android:fontFamily="@font/montserrat_semibold"
+               android:layout_marginStart="5dp"/>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/details3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:paddingTop="20dp"
+                   android:layout_marginBottom="10dp"
+                   android:textColor="#CC8010"
+                   android:onClick="detailsPage"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:text="D E T A I L S" />
+               <Button
+                   android:id="@+id/book_button3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="8dp"
+                   android:layout_marginEnd="10dp"
+                   android:background="#CC8010"
+                   android:layout_alignEnd="@+id/details3"
+                   android:onClick="bookService"
+                   android:textColor="#fff"
+                   android:text="@string/details_but"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginBottom="5dp"/>
+           </RelativeLayout>
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+       <TextView
+           android:id="@+id/our_testmonial"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:text="@string/tesmonial"
+           android:textSize="30dp"
+           android:layout_marginBottom="20dp"
+           android:layout_marginTop="20dp"
+           android:fontFamily="@font/montserrat_semibold"
+           android:textColor="#CC8010"
+           android:layout_below="@+id/card3">
+       </TextView>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:card_view="http://schemas.android.com/apk/re_auto"
+           android:id="@+id/card4"
+           android:layout_margin="5dp"
+           card_view:cardCornerRadius="4dp"
+           android:layout_below="@id/our_testmonial">
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fillViewport="true">
+               <LinearLayout android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               <LinearLayout android:orientation="vertical"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:layout_weight="1.0"
+                       android:scaleType="centerCrop"
+                       android:contentDescription="@string/content_des3"
+                       android:background="@drawable/persons"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/tesmonial1"
+                       android:layout_marginBottom="10dp"
+                       android:fontFamily="@font/montserrat_semibold"
+                       android:layout_marginStart="5dp"/>
+               </LinearLayout>
+
+               <LinearLayout android:orientation="vertical"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:layout_weight="1.0"
+                       android:scaleType="centerCrop"
+                       android:contentDescription="@string/content_des3"
+                       android:background="@drawable/persons_two"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat_semibold"
+                       android:text="@string/tesmonial2"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginStart="5dp"/>
+               </LinearLayout>
+
+               <LinearLayout android:orientation="vertical"
+                   android:layout_width="160dp"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp">
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:layout_weight="1.0"
+                       android:scaleType="centerCrop"
+                       android:contentDescription="@string/content_des3"
+                       android:background="@drawable/people_reading"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="@string/tesmonial4"
+                       android:layout_marginBottom="10dp"
+                       android:fontFamily="@font/montserrat_semibold"
+                       android:layout_marginStart="5dp"/>
+               </LinearLayout>
+                   <LinearLayout android:orientation="vertical"
+                       android:layout_width="160dp"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="150dp"
+                           android:layout_weight="1.0"
+                           android:scaleType="centerCrop"
+                           android:contentDescription="@string/content_des3"
+                           android:background="@drawable/persons_two"/>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="@string/tesmonial2"
+                           android:layout_marginBottom="10dp"
+                           android:fontFamily="@font/montserrat_semibold"
+                           android:layout_marginStart="5dp"/>
+                   </LinearLayout>
+                   <LinearLayout android:orientation="vertical"
+                       android:layout_width="160dp"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="150dp"
+                           android:layout_weight="1.0"
+                           android:scaleType="centerCrop"
+                           android:contentDescription="@string/content_des3"
+                           android:background="@drawable/persons_two"/>
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="@string/tesmonial2"
+                           android:layout_marginBottom="10dp"
+                           android:fontFamily="@font/montserrat_semibold"
+                           android:layout_marginStart="5dp"/>
+                   </LinearLayout>
+
+
+               </LinearLayout>
+           </HorizontalScrollView>
+       </androidx.cardview.widget.CardView>
+
+   </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

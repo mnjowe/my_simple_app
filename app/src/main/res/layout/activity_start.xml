@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startActivity"
+    android:fontFamily="@font/montserrat_semibold">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CC8010"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+  <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:fontFamily="@font/montserrat_semibold"
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="#BDCCF8"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:itemTextColor="#6394DF"
+        android:focusable="false"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottom"
+        app:itemIconSize="@dimen/bottom_navigation_icon_size"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+    <include layout="@layout/content_scrolling" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
