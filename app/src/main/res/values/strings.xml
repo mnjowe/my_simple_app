@@ -2,7 +2,7 @@
     <string name="app_name">FshApp</string>
     <string name="tesmonial">TESTMONIALS</string>
     <string name="content_des1">FSH Image 1</string>
-    <string name="coach_des">We have diferent kinds of land transports ready to cater for different journeys and functions. Our prices are just fair. hoping to see you using of our means of transport so that you can join a group of happy custormers. Feel free to contact us if you need more information</string>
+    <string name="coach_des">We have different kinds of land transports ready to cater for different journeys and functions. Our prices are just fair. hoping to see you using of our means of transport so that you can join a group of happy custormers. Feel free to contact us if you need more information</string>
     <string name="about">ABOUT US</string>
     <string name="tesmonial1">We had a good time using your services</string>
     <string name="tesmonial2">We always enjoy your services</string>
@@ -13,17 +13,17 @@
    <string name="location_des">We are near Chilinde parish, Area 23, Kawale Malawi. For precise location click on map button on at the home screen</string>
     <string name="content_des3">FSH Image 3</string>
     <string name="continue_but">CONTINUE</string>
-    <string name="large_text">When you are looking for a dedicated and trustworthy freight forwarding company, why not turn to us? With many years of experience in
+    <string name="large_text">When you are looking for a dedicated and trustworthy company, why not turn to us? With many years of experience in
                                 the industry, we are a proven leader and have a deep commitment to our customers.
     </string>
-    <string name="large_text1"> We are a full-service transportation and logistics provider offering airfreight, truckload, ocean freight, railway transportation, LTL,
-                            expedited, intermodal, project management, and specialized services. As one of the top freight forwarding companies, we have the expertise
+    <string name="large_text1"> We are a full service transportation and logistics provider offering airfreight, truckload, ocean freight, railway transportation,
+                            expedited, inter modal, project management, and specialized services. As one of the top freight forwarding companies, we have the expertise
                             that allows us to prepare and process the documentation and perform related activities pertaining to international shipments.
                             With transportation solutions including Air and Sea, Distribution (including Truckload and Less Than Truckload), 3PL Services, Warehouse
-                            Management and Intermodal, we can create a unique supply chain logistics solution that will allow you to focus on what matters most – your
+                            Management and Inter modal, we can create a unique supply chain logistics solution that will allow you to focus on what matters most – your
                             core goals.</string>
-    <string name="large_text2">Through ongoing education of our agents -- both customer service and cartage -- as well as through our partners, We ensure global governmental compliance. Key
-        professional and regulatory memberships include the Transportation Security Administration (TSA). In addition, we are a TAPA and C-TPAT member and have key market
+    <string name="large_text2">Through ongoing education of our agents both customer service and cartage  as well as through our partners, We ensure global governmental compliance. Key
+        professional and regulatory memberships include the Transportation Security Administration. In addition, we are a TAPA and C-TPAT member and have key market
         Certified Cargo Screening Facilities.</string>
     <string name="our_location">Our Location</string>
     <string name="details_but">BOOK SERVICE</string>
@@ -35,11 +35,11 @@
     <string name="action_about">About Us</string>
     <string name="action_help">Help</string>
     <string name="get_started">GET STARTED</string>
-    <string name="welcome_page">For You to get strated with our app you have to launch/open it and choose your prefered languege. After that you have to click continue to get to the home screen (Figure 1.0 below shows the choose languge screen)</string>
-    <string name="next_window">Then you will be taken to the home page where you have a lot option option to select from. if you want to know more aabout the service you can just TAP on it and you will be directed to the product details page. There is a button for location whre you are presented with google map to help find our bussiness location easier. there is call button incase you want to have some talks with us. There is also an emal button if you want to write us an email. last is the whatsapp button for a chat on whatsApp</string>
-    <string name="options_tab">On same main page you are also presented with direfent icons to perfom different actions. There is a search icon that gives you a chance to serch for diferent services present is the app. There is also a sign in icon that lets ypu signin to your account. once on the sign in page you can sign in to your account or follow the gicen links to create an account if ypu dont have or reset your password if forgotten</string>
+    <string name="welcome_page">For You to get started with our app you have to launch/open it and choose your preferred language. After that you have to click continue to get to the home screen (Figure 1.0 below shows the choose language screen)</string>
+    <string name="next_window">Then you will be taken to the home page where you have a lot of options to select from. if you want to know more about the service you can just TAP on it and you will be directed to the product details page. There is a button for location where you are presented with google map to help find our business location easier. there is call button in case you want to have some talks with us. There is also an emal button if you want to write us an email. last is the whatsapp button for a chat on whatsApp</string>
+    <string name="options_tab">On same main page you are also presented with different icons to perform different actions. There is a search icon that gives you a chance to search for different services present is the app. There is also a sign in icon that lets you signing to your account. once on the sign in page you can sign in to your account or follow the given links to create an account if you don\'t have one or reset your password if forgotten</string>
     <string-array name="langueges">
-        <item>--select languege--</item>
+        <item>--select language--</item>
         <item>English</item>
         <item>Chichewa</item>
     </string-array>
