@@ -54,6 +54,7 @@
             <item>Lilongwe</item>
             <item>Mzuzu</item>
             <item>Blantyre</item>
+            <item>Zomba</item>
         </string-array>
         <string-array name="trans_to">
             <item>--Journey From--</item>
